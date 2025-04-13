@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <!--The bootstrap card contains a form with form-group elements. The form contains 4 input boxes and a button.-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <form id="myForm">
+                    <div class="form-group">
+                        <label for="product-id">Product ID</label>
+                        <input type="text" class="form-control" id="product-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Product Description</label>
+                        <input type="text" class="form-control" id="product">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="text" class="form-control" id="quantity">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" id="price">
+
+                    </div>
+                    <button type="reset" id="update" class="btn btn-primary form-control">Update Table</button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--The table uses bootstrap table-striped property. The header row for the table is specified here.-->
+    <table id="list"   class="table table-striped">
+       
+            <tr>
+                <th>Product ID</th>
+                <th>Product Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                
+            </tr>
+    
+       
+           
+    </table>
+
+
+    <script src="inventory.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
